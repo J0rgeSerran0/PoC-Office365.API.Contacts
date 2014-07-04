@@ -92,7 +92,8 @@ namespace WinFormsOffice365
                     this.lblInformation.Text = "The user is logged correctly";
                     InitilizeControls(true);
                     InitilizeSignInformation(true);
-                    this.lblUserLogged.Text = String.Format("{0} {1} - ( {2} )", office365Contact.AuthenticationInfo.IdToken.GivenName,
+                    this.lblUserLogged.Text = String.Format("{0} {1} - ( {2} )", 
+                                                            office365Contact.AuthenticationInfo.IdToken.GivenName,
                                                             office365Contact.AuthenticationInfo.IdToken.FamilyName,
                                                             office365Contact.AuthenticationInfo.IdToken.Email);
                 }
